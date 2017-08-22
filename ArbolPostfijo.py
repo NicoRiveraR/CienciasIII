@@ -21,7 +21,7 @@ class ArbolPosFijo:
                 #Recorra todo el string 
                 for char in posfijo :
 
-                        # si hay operador lo apila
+                        # si NO es operador lo apila
                         if not self.buscarOperador(char):
                                 arbol = Nodo(char)
                                 pilaOperador.apilar(arbol)
